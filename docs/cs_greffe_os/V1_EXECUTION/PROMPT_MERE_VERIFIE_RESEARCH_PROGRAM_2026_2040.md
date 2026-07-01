@@ -1,0 +1,3 @@
+# PROMPT_MERE_VERIFIE_RESEARCH_PROGRAM_2026_2040
+
+Document initial à compléter.

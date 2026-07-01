@@ -1,0 +1,7 @@
+step,action,status
+A,Identifier les utilisateurs réels,open
+B,Identifier les corpus prioritaires,open
+C,Sourcer les contenus,open
+D,Valider humainement,open
+E,Recueillir feedback,open
+Z,Zéro inflation avant valeur démontrée,locked

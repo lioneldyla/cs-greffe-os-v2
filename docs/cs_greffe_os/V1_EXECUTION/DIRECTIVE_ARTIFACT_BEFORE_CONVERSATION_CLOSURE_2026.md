@@ -1,0 +1,3 @@
+# DIRECTIVE_ARTIFACT_BEFORE_CONVERSATION_CLOSURE_2026
+
+Document initial à compléter.

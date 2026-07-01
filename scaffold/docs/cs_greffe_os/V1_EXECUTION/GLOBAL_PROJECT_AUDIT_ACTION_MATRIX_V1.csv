@@ -1,0 +1,4 @@
+action,domain,priority,decision
+KEEP,PHASE 0-22,high,freeze
+BUILD,TEEO V2.7,high,execute
+FREEZE,Release 0.2,high,blocked

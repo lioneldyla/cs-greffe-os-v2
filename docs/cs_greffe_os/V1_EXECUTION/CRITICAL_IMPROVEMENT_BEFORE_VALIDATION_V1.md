@@ -1,0 +1,3 @@
+# CRITICAL_IMPROVEMENT_BEFORE_VALIDATION_V1
+
+Document initial à compléter.
