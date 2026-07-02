@@ -79,19 +79,18 @@ FILES = [
 
 def content_for(path: Path) -> str:
     name = path.name
-    stem = path.stem
 
     if path.suffix == ".md":
         extra = ""
         if "GOVERNANCE" in name.upper() or "DECISION" in name.upper():
             extra = "\n\n> La confiance ne doit jamais progresser plus vite que l'usage.\n"
-        return f"# {"{stem}"}\n\nDocument initial a completer.{"{extra}"}"
+        return f"# {path.stem}\n\nDocument initial a completer.{extra}"
 
     if path.suffix == ".csv":
         return "id,title,status,created_at\n"
 
     if path.suffix == ".py":
-        return f"# {"{stem}"}\n# Script initial CS GREFFE OS V1\n"
+        return f"# {path.stem}\n# Script initial CS GREFFE OS V1\n"
 
     if name == ".gitignore":
         return "__pycache__/\n*.pyc\n.env\nvenv/\n.DS_Store\n"
@@ -100,7 +99,6 @@ def content_for(path: Path) -> str:
         return "streamlit>=1.35,<2\npandas>=2.0,<3\nplotly>=5.18,<6\n"
 
     return ""
-
 
 def main() -> None:
     created_dirs: list[str] = []
@@ -114,8 +112,8 @@ def main() -> None:
             if not path.exists():
                 path.mkdir(parents=True, exist_ok=True)
                 created_dirs.append(str(path.relative_to(ROOT)))
-        except Exception as e:
-            errors.append(f"{"{directory}"}: {"{e}"}")
+        except Exception as _e:
+            errors.append(f"{directory}: {_e}")
 
     for file in FILES:
         try:
@@ -126,8 +124,8 @@ def main() -> None:
                 continue
             path.write_text(content_for(path), encoding="utf-8")
             created_files.append(str(path.relative_to(ROOT)))
-        except Exception as e:
-            errors.append(f"{"{file}"}: {"{e}"}")
+        except Exception as _e:
+            errors.append(f"{file}: {_e}")
 
     missing = [
         item
@@ -136,31 +134,30 @@ def main() -> None:
     ]
 
     print("\n# Rapport de creation CS GREFFE OS V1\n")
-    print(f"## Dossier racine\n{"{ROOT}"}\n")
+    print(f"## Dossier racine\n{ROOT}\n")
 
     print("## Dossiers crees")
     for item in created_dirs or ["- Aucun"]:
-        print(f"- {"{item}"}")
+        print(f"- {item}")
 
     print("\n## Fichiers crees")
     for item in created_files or ["- Aucun"]:
-        print(f"- {"{item}"}")
+        print(f"- {item}")
 
     print("\n## Fichiers deja existants")
     for item in existing_files or ["- Aucun"]:
-        print(f"- {"{item}"}")
+        print(f"- {item}")
 
     print("\n## Elements manquants")
     for item in missing or ["- Aucun"]:
-        print(f"- {"{item}"}")
+        print(f"- {item}")
 
     print("\n## Erreurs")
     for item in errors or ["- Aucune"]:
-        print(f"- {"{item}"}")
+        print(f"- {item}")
 
     print("\n## Conformite")
     print("Conformite : OUI" if not missing and not errors else "Conformite : NON")
-
 
 if __name__ == "__main__":
     main()
