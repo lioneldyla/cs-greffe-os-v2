@@ -1,0 +1,6 @@
+student_id,nom,prenom,email,promotion,statut
+1,Kouassi,Ama,ama.kouassi@infj-fictif.ci,2026,actif
+2,Bamba,Sekou,sekou.bamba@infj-fictif.ci,2026,actif
+3,Yao,Adjoua,adjoua.yao@infj-fictif.ci,2025,actif
+4,Diallo,Moussa,moussa.diallo@infj-fictif.ci,2025,inactif
+5,Traore,Fanta,fanta.traore@infj-fictif.ci,2026,actif
