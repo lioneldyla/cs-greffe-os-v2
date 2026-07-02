@@ -1,0 +1,7 @@
+attempt_id,student_id,question_id,correcte,score_obtenu,date_tentative
+1,1,1,true,2,2026-01-15
+2,1,2,true,2,2026-01-15
+3,2,1,true,2,2026-01-15
+4,2,3,false,2,2026-01-18
+5,3,4,true,2,2026-01-20
+6,5,5,false,1,2026-01-18
