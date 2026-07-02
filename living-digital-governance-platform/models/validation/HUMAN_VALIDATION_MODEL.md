@@ -14,13 +14,14 @@ flowchart TD
     F --> I[Traceability Log]
     G --> I
     H --> I
+```
 
-Minimum validation evidence:
+## Minimum Validation Evidence
 
-validated object;
-validator;
-validation date;
-validation decision;
-validation scope;
-reason for rejection if rejected;
-traceability log.
+- validated object
+- validator
+- validation date
+- validation decision
+- validation scope
+- reason for rejection if rejected
+- Traceability Log
