@@ -1,0 +1,7 @@
+question_id,lesson_id,enonce,type,points
+1,1,Quel est le role principal du greffier,QCM,2
+2,1,Le greffe est rattache a quelle juridiction,QCM,2
+3,2,Citez trois missions du greffier,REDACTION,4
+4,3,Quel texte fonde le statut du greffier,QCM,2
+5,4,Combien de tribunaux de premiere instance compte la Cote dIvoire,QCM,3
+6,5,Quelle est la difference entre TPI et CA,REDACTION,4
