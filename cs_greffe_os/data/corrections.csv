@@ -1,0 +1,7 @@
+correction_id,attempt_id,correcte,commentaire,correcteur_id,date_correction
+1,1,true,Bonne reponse,1,2026-01-16
+2,2,true,Exact,1,2026-01-16
+3,3,true,Correct,1,2026-01-16
+4,4,false,Reponse incomplete,1,2026-01-19
+5,5,true,Tres bien,1,2026-01-21
+6,6,false,Chiffre incorrect,1,2026-01-19
