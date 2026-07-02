@@ -1,0 +1,8 @@
+lesson_id,module_id,titre,ordre,duree_min,type
+1,1,Introduction au greffe ivoirien,1,30,cours
+2,1,Role et missions du greffier,2,45,cours
+3,1,Textes fondateurs,3,60,lecture
+4,2,Organisation judiciaire de Cote dIvoire,1,45,cours
+5,2,Les juridictions competentes,2,30,cours
+6,3,Procedures civiles de base,1,60,cours
+7,3,Actes de greffe,2,45,pratique
